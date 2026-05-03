@@ -212,6 +212,9 @@ Pipeline stages:
 
 ## 📸 Screenshots
 
+### Architecture Diagram
+![Architecture Diagram](images/)
+
 ### 🖥️ EC2 Instance Running
 Shows that the server is up and Jenkins is hosted on it.
 
