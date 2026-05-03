@@ -210,36 +210,46 @@ Pipeline stages:
 
 ---
 
-## 📸 Screenshots
+## 📸 Project Implementation Screenshots
 
-### Architecture Diagram
-![Architecture Diagram](images/CICD pipeline architecture diagram.png)
-
-### 🖥️ EC2 Instance Running
-Shows that the server is up and Jenkins is hosted on it.
-
-![EC2 Running](images/EC2 Runing.png)
+### 🏗️ Architecture Diagram
+The following diagram illustrates the automated CI/CD workflow from GitHub to AWS Lambda.
+![Architecture Diagram](images/CICD_pipeline_architecture_diagram.png)
 
 ---
 
-### ⚙️ Jenkins Pipeline Success
-Pipeline executed successfully with all stages completed.
-
-![Jenkins Pipeline](images/Jenkins_Build_Status_Success.png)
-
----
-
-### 🐳 Docker Build Logs
-Docker image build process inside Jenkins.
-
-![Docker Build](images/docker-build.png)
+### 🖥️ Infrastructure: EC2 Instance
+The Jenkins server is hosted on an AWS EC2 `t3.micro` instance, currently in a **Running** state.
+![EC2 Running](images/AWS_EC2_Jenkins_Server_Status.png)
 
 ---
 
-### 📦 Amazon ECR Repository
-Docker image successfully pushed to ECR.
+### ⚙️ CI/CD Pipeline Execution
+Jenkins Pipeline successfully triggered and executed all stages for the `docker-ecr-pipeline`.
+![Jenkins Pipeline Success](images/Jenkins_Build_Status_Success.png)
 
+---
+
+### 🐳 Docker Build & Containerization
+Detailed logs showing the Docker image being built and pushed to the registry.
+![Docker Build Logs](images/Jenkins_Console_Docker_Push_Layers.png)
+
+---
+
+### 📦 Container Registry: Amazon ECR
+The Docker image `my-node-app` has been successfully pushed and stored in the private Amazon ECR repository.
 ![ECR Image](images/AWS_ECR_Repository_my-node-app.png)
+
+---
+
+### ☁️ Serverless Deployment & Monitoring
+Deployment verification through AWS Lambda configuration and CloudWatch Log management.
+
+**AWS Lambda Function:**
+![Lambda Function](images/AWS_Lambda_Function_myfunction.png)
+
+**CloudWatch Log Streams:**
+![CloudWatch Logs](images/AWS_CloudWatch_Log_Streams.png)
 
 ---
 
