@@ -1,11 +1,5 @@
 import json
 
 def lambda_handler(event, context):
-    print("ECR Image Push Event Received 🚀")
-    
+    print("Image pushed to ECR 🚀")
     print(json.dumps(event))
-
-    return {
-        'statusCode': 200,
-        'body': json.dumps('Lambda executed successfully!')
-    }
