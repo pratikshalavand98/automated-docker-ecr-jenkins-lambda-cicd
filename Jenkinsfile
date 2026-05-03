@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = "us-east-1"
-        ACCOUNT_ID = "YOUR_ACCOUNT_ID"  
+        ACCOUNT_ID = "922085930637"  
         REPO_NAME = "my-node-app"
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
