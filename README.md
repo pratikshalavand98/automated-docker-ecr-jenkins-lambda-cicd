@@ -213,14 +213,16 @@ Pipeline stages:
 ## 📸 Project Implementation Screenshots
 
 ### 🏗️ Architecture Diagram
-The following diagram illustrates the automated CI/CD workflow from GitHub to AWS Lambda.
-![Architecture Diagram](images/CICD pipeline architecture diagram.png)
+The diagram below illustrates the automated CI/CD workflow from GitHub to AWS Lambda.
+
+![Architecture Diagram](images/CICD%20pipeline%20architecture%20diagram.png)
 
 ---
 
 ### 🖥️ Infrastructure: EC2 Instance
-The Jenkins server is hosted on an AWS EC2 `t3.micro` instance, currently in a **Running** state.
-![EC2 Running](images/EC2 Runing.png)
+The Jenkins server is hosted on an AWS EC2 **t3.micro** instance and is currently in the **Running** state.
+
+![EC2 Instance Running](images/EC2%20Runing.png)
 
 ---
 
