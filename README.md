@@ -214,13 +214,13 @@ Pipeline stages:
 
 ### 🏗️ Architecture Diagram
 The following diagram illustrates the automated CI/CD workflow from GitHub to AWS Lambda.
-![Architecture Diagram](images/CICD_pipeline_architecture_diagram.png)
+![Architecture Diagram](images/CICD pipeline architecture diagram.png)
 
 ---
 
 ### 🖥️ Infrastructure: EC2 Instance
 The Jenkins server is hosted on an AWS EC2 `t3.micro` instance, currently in a **Running** state.
-![EC2 Running](images/AWS_EC2_Jenkins_Server_Status.png)
+![EC2 Running](images/EC2 Runing.png)
 
 ---
 
@@ -229,11 +229,6 @@ Jenkins Pipeline successfully triggered and executed all stages for the `docker-
 ![Jenkins Pipeline Success](images/Jenkins_Build_Status_Success.png)
 
 ---
-
-### 🐳 Docker Build & Containerization
-Detailed logs showing the Docker image being built and pushed to the registry.
-![Docker Build Logs](images/Jenkins_Console_Docker_Push_Layers.png)
-
 ---
 
 ### 📦 Container Registry: Amazon ECR
